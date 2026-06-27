@@ -1,0 +1,149 @@
+/* ============================================
+   ANIMATIONS.CSS — Keyframes & Transitions
+   ============================================ */
+
+/* Loader */
+@keyframes loaderFill {
+  0%   { width: 0%; }
+  100% { width: 100%; }
+}
+@keyframes loaderOut {
+  0%   { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-100%); }
+}
+
+/* Glitch */
+@keyframes glitch1 {
+  0%   { clip-path: inset(40% 0 61% 0); transform: translate(-4px, 0); color: #00ff7f; }
+  20%  { clip-path: inset(92% 0 1%  0); transform: translate( 4px, 0); color: #39ff14; }
+  40%  { clip-path: inset(43% 0 1%  0); transform: translate(-4px, 0); color: #00ff7f; }
+  60%  { clip-path: inset(25% 0 58% 0); transform: translate( 4px, 0); color: #39ff14; }
+  80%  { clip-path: inset(54% 0 7%  0); transform: translate(-4px, 0); color: #00ff7f; }
+  100% { clip-path: inset(58% 0 43% 0); transform: translate( 4px, 0); color: #39ff14; }
+}
+@keyframes glitch2 {
+  0%   { clip-path: inset(24% 0 29% 0); transform: translate( 4px, 0); }
+  20%  { clip-path: inset(62% 0 8%  0); transform: translate(-4px, 0); }
+  40%  { clip-path: inset(4%  0 46% 0); transform: translate( 4px, 0); }
+  60%  { clip-path: inset(31% 0 62% 0); transform: translate(-4px, 0); }
+  80%  { clip-path: inset(81% 0 5%  0); transform: translate( 4px, 0); }
+  100% { clip-path: inset(11% 0 70% 0); transform: translate(-4px, 0); }
+}
+
+/* Glow pulse */
+@keyframes glowPulse {
+  0%, 100% { text-shadow: 0 0 10px #00ff7f, 0 0 20px #00ff7f, 0 0 40px #00ff7f; }
+  50%       { text-shadow: 0 0 20px #00ff7f, 0 0 50px #00ff7f, 0 0 100px #00ff7f; }
+}
+
+/* Neon flicker */
+@keyframes neonFlicker {
+  0%,91%,93%,96%,100% { opacity: 1; }
+  92%,95%              { opacity: 0.4; }
+  94%                  { opacity: 0.8; }
+}
+
+/* Ring rotation */
+@keyframes ringRot   { from { transform: rotate(0deg);   } to { transform: rotate(360deg);  } }
+@keyframes ringRotRv { from { transform: rotate(360deg); } to { transform: rotate(0deg);    } }
+
+/* Floating geos */
+@keyframes floatX {
+  0%,100% { transform: translateY(0)   rotate(0deg);  }
+  50%     { transform: translateY(-25px) rotate(15deg); }
+}
+@keyframes floatDiamond {
+  0%,100% { transform: translateY(0)   rotate(45deg); }
+  50%     { transform: translateY(-20px) rotate(55deg); }
+}
+
+/* Scanline sweep */
+@keyframes scanSweep {
+  0%   { top: -5%; opacity: 1; }
+  100% { top: 105%; opacity: 0; }
+}
+
+/* Profile scanline */
+@keyframes profileScan {
+  0%   { top: 0%; }
+  100% { top: 100%; }
+}
+
+/* Pulse dot */
+@keyframes pulseDot {
+  0%,100% { box-shadow: 0 0 0 0   rgba(0,255,127,0.7); }
+  70%     { box-shadow: 0 0 0 10px rgba(0,255,127,0);   }
+}
+
+/* Scroll arrow */
+@keyframes scrollArrow {
+  0%   { transform: translateY(0)  rotate(45deg); opacity: 1; }
+  100% { transform: translateY(12px) rotate(45deg); opacity: 0; }
+}
+
+/* Skill bar fill */
+@keyframes fillBar {
+  from { width: 0%; }
+  to   { width: var(--pct); }
+}
+
+/* Fade in up (reveal) */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(50px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Ripple click */
+@keyframes rippleOut {
+  0%   { transform: scale(0);  opacity: 0.6; }
+  100% { transform: scale(6);  opacity: 0; }
+}
+
+/* Cursor blink */
+@keyframes blink {
+  0%,100% { opacity: 1; }
+  50%     { opacity: 0; }
+}
+
+/* Timeline draw */
+@keyframes drawLine {
+  from { height: 0; }
+  to   { height: 100%; }
+}
+
+/* Badge slide in */
+@keyframes badgeIn {
+  from { opacity: 0; transform: translateX(-20px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* Loader bar fill */
+@keyframes barFill {
+  0%   { width: 0%; }
+  80%  { width: 90%; }
+  100% { width: 100%; }
+}
+
+/* Geo X slow spin */
+@keyframes geoXSpin {
+  from { transform: rotate(0deg);   }
+  to   { transform: rotate(360deg); }
+}
+
+/* Corner blink */
+@keyframes cornerBlink {
+  0%,100% { opacity: 1; }
+  50%     { opacity: 0.3; }
+}
+
+/* Open pulse badge */
+@keyframes openPulse {
+  0%,100% { transform: scale(1);   opacity: 1; }
+  50%     { transform: scale(1.4); opacity: 0.5; }
+}
+
+/* Card shimmer */
+@keyframes shimmer {
+  0%   { left: -100%; }
+  100% { left: 200%;  }
+}

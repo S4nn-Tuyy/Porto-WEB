@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Andi Ihsanul — Full Stack & Cyber Security</title>
+  <meta name="description" content="Portfolio of Andi Muh Ihsanul Haq M — Full Stack Developer & Cyber Security enthusiast based in Indonesia." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;600;700;900&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">AH<span>.</span></div>
+      <div class="loader-bar-wrap"><div class="loader-bar-fill" id="loader-fill"></div></div>
+      <div class="loader-text" id="loader-text">INITIALIZING PORTFOLIO...</div>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- Click Ripple Container -->
+  <div id="ripple-container"></div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-logo">AH<span class="neon">.</span></div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#hero" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#certificates" class="nav-link">Certs</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn-hire-nav magnetic" id="btn-hire-nav">HIRE ME</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <canvas id="matrix-canvas"></canvas>
+
+    <!-- Full-height photo -->
+    <div class="hero-photo-wrap">
+      <img src="assets/profile-hero.png" alt="Andi Ihsanul" class="hero-photo" id="hero-photo" />
+      <div class="hero-photo-overlay"></div>
+    </div>
+
+    <!-- Geometric shapes -->
+    <div class="geo geo-x geo-x1" aria-hidden="true">&#x2715;</div>
+    <div class="geo geo-diamond geo-d2" aria-hidden="true">&#x25C6;</div>
+
+    <!-- Corner decorations -->
+    <div class="hero-corner hc-tl"></div>
+    <div class="hero-corner hc-br"></div>
+
+    <!-- Main content -->
+    <div class="hero-content" id="hero-content">
+      <div class="hero-left">
+        <div class="hero-badge"><span class="badge-dot"></span>AVAILABLE FOR WORK</div>
+        <p class="hero-greeting">Hi&#x1F44B;, I'm a</p>
+        <h1 class="hero-name glitch" data-text="ANDI IHSANUL">ANDI IHSANUL</h1>
+        <div class="hero-role">
+          <span class="role-comment">// </span>
+          <span id="typewriter"></span><span class="cursor-blink">_</span>
+        </div>
+        <p class="hero-bio">Building the future, one line of code at a time. From robust web applications to cybersecurity — I craft digital solutions that matter.</p>
+        <div class="hero-cta">
+          <button class="btn-primary magnetic" id="btn-view-work" onclick="scrollToSection('projects')">VIEW MY WORK <i class="fas fa-arrow-right"></i></button>
+          <a href="#contact" class="btn-outline magnetic">CONTACT ME</a>
+          <a href="assets/cv-andi-ihsanul.pdf" download="CV-Andi-Muh-Ihsanul-Haq-M.pdf" class="btn-cv magnetic" id="btn-download-cv">
+            <i class="fas fa-download"></i> DOWNLOAD CV
+          </a>
+        </div>
+        <div class="hero-info-row">
+          <div class="hero-info-item"><span class="hi-label">UNIVERSITY</span><span class="hi-val">Telkom University</span></div>
+          <div class="hero-info-sep"></div>
+          <div class="hero-info-item"><span class="hi-label">STATUS</span><span class="hi-val">Open to Work</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <span>SCROLL</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="section-number">01</div>
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-col reveal">
+          <div class="profile-wrap">
+            <img src="assets/profile-about.jpg" alt="Andi Muh Ihsanul Haq M" class="profile-photo" id="profile-photo" />
+            <div class="profile-ring r1"></div>
+            <div class="profile-ring r2"></div>
+            <div class="profile-scanline"></div>
+            <div class="profile-corner c-tl"></div>
+            <div class="profile-corner c-tr"></div>
+            <div class="profile-corner c-bl"></div>
+            <div class="profile-corner c-br"></div>
+          </div>
+          <div class="avail-badge"><span class="pulse-dot"></span>Open to Opportunities</div>
+        </div>
+        <div class="about-text-col reveal">
+          <div class="section-tag">// WHO_AM_I.exe</div>
+          <h2 class="section-title">ABOUT <span class="neon">ME</span></h2>
+          <p class="about-bio">A passionate <span class="neon-text">Full Stack Developer</span> &amp; <span class="neon-text">Cyber Security</span> enthusiast based in Indonesia. I love turning complex problems into elegant digital solutions.</p>
+          <p class="about-bio">Currently pursuing <strong>S1 Sistem Informasi</strong> at Telkom University, I blend academic knowledge with hands-on project experience to build impactful products — from AI-powered mobile apps to secure web systems.</p>
+          <div class="stats-row">
+            <div class="stat-box">
+              <div class="stat-num" data-target="6">0</div>
+              <div class="stat-lbl">Tech Stacks</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-num" data-target="3">0</div>
+              <div class="stat-lbl">Years Coding</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-num" data-target="10">0</div>
+              <div class="stat-lbl">Projects Done</div>
+            </div>
+          </div>
+          <div class="about-cta-row">
+            <a href="#projects" class="btn-outline-sm magnetic">EXPLORE MY WORK</a>
+            <a href="assets/cv-andi-ihsanul.pdf" download="CV-Andi-Muh-Ihsanul-Haq-M.pdf" class="btn-cv-sm magnetic" id="btn-download-cv-about">
+              <i class="fas fa-file-download"></i> DOWNLOAD CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="section-number">02</div>
+    <div class="container">
+      <div class="section-tag reveal">// SYSTEM_SCAN.exe</div>
+      <h2 class="section-title reveal">MY <span class="neon">SKILLS</span></h2>
+      <div class="scan-anim reveal"><div class="scan-beam"></div></div>
+      <div class="skills-grid">
+        <div class="skill-cat reveal">
+          <div class="cat-header"><span class="bracket">[</span> FRONTEND <span class="bracket">]</span></div>
+          <div class="skill-row" data-pct="90"><div class="sk-label"><span>React.js</span><span class="sk-pct">90%</span></div><div class="sk-bar"><div class="sk-fill"></div></div></div>
+          <div class="skill-row" data-pct="88"><div class="sk-label"><span>JavaScript</span><span class="sk-pct">88%</span></div><div class="sk-bar"><div class="sk-fill"></div></div></div>
+          <div class="skill-row" data-pct="85"><div class="sk-label"><span>Tailwind CSS</span><span class="sk-pct">85%</span></div><div class="sk-bar"><div class="sk-fill"></div></div></div>
+        </div>
+        <div class="skill-cat reveal">
+          <div class="cat-header"><span class="bracket">[</span> BACKEND <span class="bracket">]</span></div>
+          <div class="skill-row" data-pct="82"><div class="sk-label"><span>Node.js</span><span class="sk-pct">82%</span></div><div class="sk-bar"><div class="sk-fill"></div></div></div>
+          <div class="skill-row" data-pct="78"><div class="sk-label"><span>Laravel</span><span class="sk-pct">78%</span></div><div class="sk-bar"><div class="sk-fill"></div></div></div>
+        </div>
+        <div class="skill-cat reveal">
+          <div class="cat-header"><span class="bracket">[</span> MOBILE <span class="bracket">]</span></div>
+          <div class="skill-row" data-pct="80"><div class="sk-label"><span>Flutter</span><span class="sk-pct">80%</span></div><div class="sk-bar"><div class="sk-fill"></div></div></div>
+        </div>
+        <div class="skill-cat reveal">
+          <div class="cat-header"><span class="bracket">[</span> SECURITY <span class="bracket">]</span></div>
+          <div class="skill-row" data-pct="72"><div class="sk-label"><span>Cyber Security</span><span class="sk-pct">72%</span></div><div class="sk-bar"><div class="sk-fill"></div></div></div>
+          <div class="skill-row" data-pct="68"><div class="sk-label"><span>Network Analysis</span><span class="sk-pct">68%</span></div><div class="sk-bar"><div class="sk-fill"></div></div></div>
+        </div>
+      </div>
+        <div class="skill-cat reveal">
+          <div class="cat-header"><span class="bracket">[</span> TOOLS <span class="bracket">]</span></div>
+          <div class="skill-row" data-pct="85"><div class="sk-label"><span>Figma</span><span class="sk-pct">85%</span></div><div class="sk-bar"><div class="sk-fill"></div></div></div>
+          <div class="skill-row" data-pct="80"><div class="sk-label"><span>Adobe Premiere</span><span class="sk-pct">80%</span></div><div class="sk-bar"><div class="sk-fill"></div></div></div>
+          <div class="skill-row" data-pct="78"><div class="sk-label"><span>Adobe After Effect</span><span class="sk-pct">78%</span></div><div class="sk-bar"><div class="sk-fill"></div></div></div>
+          <div class="skill-row" data-pct="90"><div class="sk-label"><span>Canva</span><span class="sk-pct">90%</span></div><div class="sk-bar"><div class="sk-fill"></div></div></div>
+        </div>
+      <div class="tech-pills reveal">
+        <span class="pill">React</span><span class="pill">Flutter</span><span class="pill">Node.js</span>
+        <span class="pill">JavaScript</span><span class="pill">Laravel</span><span class="pill">Tailwind</span>
+        <span class="pill">Figma</span><span class="pill">Canva</span><span class="pill">Git</span>
+        <span class="pill">Adobe Premiere</span><span class="pill">After Effect</span>
+        <span class="pill">Leadership</span><span class="pill">Teamwork</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="section-number">03</div>
+    <div class="container">
+      <div class="section-tag reveal">// PROJECTS_LIST.dir</div>
+      <h2 class="section-title reveal">MY <span class="neon">PROJECTS</span></h2>
+      <div class="filter-row reveal">
+        <button class="f-btn active" data-filter="all">ALL</button>
+        <button class="f-btn" data-filter="mobile">MOBILE</button>
+        <button class="f-btn" data-filter="web">WEB</button>
+        <button class="f-btn" data-filter="backend">BACKEND</button>
+      </div>
+      <div class="projects-grid" id="projects-grid">
+        <!-- PASITA -->
+        <div class="proj-card tilt" data-category="mobile" id="card-pasita">
+          <div class="proj-card-header">
+            <span class="proj-num">01</span>
+            <span class="proj-status"><span class="s-dot active-dot"></span>ACTIVE</span>
+          </div>
+          <div class="proj-thumb">
+            <div class="proj-icon-wrap"><span class="proj-icon">🌱</span></div>
+            <div class="proj-overlay">
+              <a href="https://github.com/S4nn-Tuyy/PASITA-app" target="_blank" class="overlay-link">
+                <i class="fab fa-github"></i> VIEW ON GITHUB
+              </a>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-filename">&gt; PASITA.apk</div>
+            <h3 class="proj-title">PASITA</h3>
+            <p class="proj-desc">Aplikasi monitoring pertumbuhan tanaman hidroponik dengan analisis kondisi tanaman berbasis AI. Smart agriculture meets modern technology.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Flutter</span>
+              <span class="proj-tag">AI/ML</span>
+              <span class="proj-tag">Node.js</span>
+              <span class="proj-tag">Mobile</span>
+            </div>
+            <div class="proj-links">
+              <a href="https://github.com/S4nn-Tuyy/PASITA-app" target="_blank" class="proj-link-btn"><i class="fab fa-github"></i> Source Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coming Soon Card -->
+        <div class="proj-card tilt coming-soon-card" data-category="web" id="card-next">
+          <div class="proj-card-header">
+            <span class="proj-num">02</span>
+            <span class="proj-status"><span class="s-dot pending-dot"></span>SOON</span>
+          </div>
+          <div class="proj-thumb">
+            <div class="proj-icon-wrap coming"><span class="proj-icon">⚡</span></div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-filename">&gt; NEXT_PROJECT.exe</div>
+            <h3 class="proj-title">Coming Soon</h3>
+            <p class="proj-desc">Something extraordinary is being crafted. Stay tuned for the next breakthrough project...</p>
+            <div class="proj-tags"><span class="proj-tag">TBA</span></div>
+          </div>
+        </div>
+
+        <!-- Coming Soon Card 2 -->
+        <div class="proj-card tilt coming-soon-card" data-category="backend" id="card-next2">
+          <div class="proj-card-header">
+            <span class="proj-num">03</span>
+            <span class="proj-status"><span class="s-dot pending-dot"></span>SOON</span>
+          </div>
+          <div class="proj-thumb">
+            <div class="proj-icon-wrap coming"><span class="proj-icon">🔐</span></div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-filename">&gt; SECURITY_PROJECT.exe</div>
+            <h3 class="proj-title">Security Tool</h3>
+            <p class="proj-desc">A cybersecurity tool currently in development. Focused on network analysis and vulnerability assessment.</p>
+            <div class="proj-tags"><span class="proj-tag">Security</span><span class="proj-tag">TBA</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section id="certificates" class="section">
+    <div class="section-number">04</div>
+    <div class="container">
+      <div class="section-tag reveal">// CREDENTIALS.dir</div>
+      <h2 class="section-title reveal">MY <span class="neon">CERTIFICATES</span></h2>
+      <div class="cert-grid">
+
+        <!-- Google Coursera -->
+        <div class="cert-card reveal" id="cert-google">
+          <div class="cert-header">
+            <div class="cert-issuer-logo google-logo">G</div>
+            <div class="cert-meta">
+              <div class="cert-issuer">Google × Coursera</div>
+              <div class="cert-date"><i class="fas fa-calendar-alt"></i> May 20, 2026</div>
+            </div>
+            <div class="cert-badge-icon"><i class="fas fa-certificate"></i></div>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-name">Network Architecture</h3>
+            <p class="cert-desc">An online course authorized by Google and offered through Coursera. Covers core concepts of network design, protocols, and infrastructure.</p>
+            <div class="cert-tags">
+              <span class="cert-tag">Networking</span>
+              <span class="cert-tag">Cyber Security</span>
+              <span class="cert-tag">Google</span>
+            </div>
+          </div>
+          <div class="cert-footer">
+            <span class="cert-verified"><span class="cert-dot"></span>VERIFIED</span>
+          </div>
+        </div>
+
+        <!-- Placeholder 2 -->
+        <div class="cert-card cert-placeholder reveal" id="cert-soon1">
+          <div class="cert-header">
+            <div class="cert-issuer-logo placeholder-logo">?</div>
+            <div class="cert-meta">
+              <div class="cert-issuer">Coming Soon</div>
+              <div class="cert-date"><i class="fas fa-clock"></i> In Progress</div>
+            </div>
+            <div class="cert-badge-icon"><i class="fas fa-lock"></i></div>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-name">Next Certificate</h3>
+            <p class="cert-desc">Currently working on the next certification. Stay tuned for updates on new achievements and credentials.</p>
+            <div class="cert-tags">
+              <span class="cert-tag">TBA</span>
+            </div>
+          </div>
+          <div class="cert-footer">
+            <span class="cert-pending"><span class="cert-dot-pending"></span>PENDING</span>
+          </div>
+        </div>
+
+        <!-- Placeholder 3 -->
+        <div class="cert-card cert-placeholder reveal" id="cert-soon2">
+          <div class="cert-header">
+            <div class="cert-issuer-logo placeholder-logo">?</div>
+            <div class="cert-meta">
+              <div class="cert-issuer">Coming Soon</div>
+              <div class="cert-date"><i class="fas fa-clock"></i> In Progress</div>
+            </div>
+            <div class="cert-badge-icon"><i class="fas fa-lock"></i></div>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-name">Next Certificate</h3>
+            <p class="cert-desc">More certifications are being pursued to expand expertise in full stack development and cybersecurity.</p>
+            <div class="cert-tags">
+              <span class="cert-tag">TBA</span>
+            </div>
+          </div>
+          <div class="cert-footer">
+            <span class="cert-pending"><span class="cert-dot-pending"></span>PENDING</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="section-number">05</div>
+    <div class="container">
+      <div class="section-tag reveal">// SYSTEM_LOG.txt</div>
+      <h2 class="section-title reveal">EDUCATION & <span class="neon">EXPERIENCE</span></h2>
+      <div class="timeline">
+
+        <!-- EDUCATION -->
+        <div class="tl-item reveal">
+          <div class="tl-dot"><div class="tl-pulse"></div></div>
+          <div class="tl-card">
+            <div class="tl-date">2023 — PRESENT</div>
+            <h3 class="tl-title">S1 Sistem Informasi</h3>
+            <div class="tl-company"><i class="fas fa-university"></i> Telkom University &nbsp;|&nbsp; GPA: 3.5/4.00</div>
+            <p class="tl-desc">Mempelajari sistem informasi, pengembangan perangkat lunak, keamanan siber, dan teknologi informasi modern. Aktif dalam pengembangan proyek-proyek inovatif berbasis AI dan web.</p>
+            <div class="tl-tags">
+              <span class="tl-tag">Information Systems</span>
+              <span class="tl-tag">Software Engineering</span>
+              <span class="tl-tag">Cyber Security</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- EXP 1 -->
+        <div class="tl-item reveal">
+          <div class="tl-dot"><div class="tl-pulse"></div></div>
+          <div class="tl-card">
+            <div class="tl-date">APR 2026</div>
+            <h3 class="tl-title">Mentor Cyber Security</h3>
+            <div class="tl-company"><i class="fas fa-shield-alt"></i> Study Group EIM Laboratory</div>
+            <p class="tl-desc">Membimbing peserta study group dalam memahami konsep dasar hingga menengah Cyber Security. Menyampaikan materi praktik mengenai keamanan jaringan, kerentanan sistem, dan dasar-dasar pengujian keamanan.</p>
+            <div class="tl-tags">
+              <span class="tl-tag">Cyber Security</span>
+              <span class="tl-tag">Mentoring</span>
+              <span class="tl-tag">Network Security</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- EXP 2 -->
+        <div class="tl-item reveal">
+          <div class="tl-dot"><div class="tl-pulse"></div></div>
+          <div class="tl-card">
+            <div class="tl-date">SEPT 2025 — JAN 2026</div>
+            <h3 class="tl-title">Asisten Praktikum Sistem Operasi</h3>
+            <div class="tl-company"><i class="fas fa-chalkboard-teacher"></i> Sisjar Laboratory — Part Time</div>
+            <p class="tl-desc">Mengajar dan membimbing mahasiswa dalam memahami konsep Sistem Operasi. Mengawasi pelaksanaan praktikum agar sesuai modul serta memberikan dukungan teknis dan pemecahan masalah.</p>
+            <div class="tl-tags">
+              <span class="tl-tag">Operating Systems</span>
+              <span class="tl-tag">Teaching</span>
+              <span class="tl-tag">Technical Support</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- EXP 3 -->
+        <div class="tl-item reveal">
+          <div class="tl-dot"><div class="tl-pulse"></div></div>
+          <div class="tl-card">
+            <div class="tl-date">FEB 2025 — JUN 2025</div>
+            <h3 class="tl-title">Asisten Praktikum Pemrograman Berbasis Objek</h3>
+            <div class="tl-company"><i class="fas fa-code"></i> EAD Laboratory</div>
+            <p class="tl-desc">Membimbing mahasiswa dalam memahami konsep dasar hingga lanjutan pemrograman berorientasi objek. Menyusun dan mengawasi jalannya praktikum agar berjalan efektif dan sesuai silabus.</p>
+            <div class="tl-tags">
+              <span class="tl-tag">OOP</span>
+              <span class="tl-tag">Teaching</span>
+              <span class="tl-tag">Problem Solving</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- EXP 4 -->
+        <div class="tl-item reveal">
+          <div class="tl-dot"><div class="tl-pulse"></div></div>
+          <div class="tl-card">
+            <div class="tl-date">DES 2024 — DES 2025</div>
+            <h3 class="tl-title">Wakil Ketua</h3>
+            <div class="tl-company"><i class="fas fa-users"></i> Telkom Karate-Do Club</div>
+            <p class="tl-desc">Berkoordinasi dengan pihak universitas dalam pemenuhan kebutuhan administratif dan pengembangan organisasi. Membantu melatih dan mengembangkan keterampilan 30 anggota dalam teknik serta disiplin karate.</p>
+            <div class="tl-tags">
+              <span class="tl-tag">Leadership</span>
+              <span class="tl-tag">Organization</span>
+              <span class="tl-tag">Training</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- EXP 5 -->
+        <div class="tl-item reveal">
+          <div class="tl-dot"><div class="tl-pulse"></div></div>
+          <div class="tl-card">
+            <div class="tl-date">JAN 2025 — FEB 2025</div>
+            <h3 class="tl-title">PIC P3K &amp; Keamanan</h3>
+            <div class="tl-company"><i class="fas fa-medkit"></i> ICADEIS Event</div>
+            <p class="tl-desc">Mengkoordinasikan dan memberikan pertolongan pertama dalam situasi darurat selama acara. Berkolaborasi dengan tim medis dan keamanan untuk memastikan lingkungan acara tetap aman dan kondusif.</p>
+            <div class="tl-tags">
+              <span class="tl-tag">Event Management</span>
+              <span class="tl-tag">Safety</span>
+              <span class="tl-tag">Coordination</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- EXP 6 -->
+        <div class="tl-item reveal">
+          <div class="tl-dot"><div class="tl-pulse"></div></div>
+          <div class="tl-card">
+            <div class="tl-date">APRIL 2022 — MEI 2025</div>
+            <h3 class="tl-title">Koordinator Publikasi &amp; Dokumentasi</h3>
+            <div class="tl-company"><i class="fas fa-camera"></i> Social Relationship of Moslem (SRM)</div>
+            <p class="tl-desc">Bertanggung jawab dalam produksi konten visual yang kreatif dan informatif. Berkontribusi dalam proyek desain serta mengembangkan keterampilan desain digital 10 anggota.</p>
+            <div class="tl-tags">
+              <span class="tl-tag">Content Creation</span>
+              <span class="tl-tag">Design</span>
+              <span class="tl-tag">Branding</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- EXP 7 -->
+        <div class="tl-item reveal">
+          <div class="tl-dot"><div class="tl-pulse"></div></div>
+          <div class="tl-card">
+            <div class="tl-date">FEB 2024 — JAN 2025</div>
+            <h3 class="tl-title">Publikasi &amp; Dokumentasi</h3>
+            <div class="tl-company"><i class="fas fa-vote-yea"></i> Panitia Pemilihan Umum Himpunan</div>
+            <p class="tl-desc">Mendokumentasikan kegiatan serta mengelola penyebaran informasi melalui berbagai platform digital. Merancang materi publikasi untuk mendukung penyelenggaraan pemilihan umum organisasi.</p>
+            <div class="tl-tags">
+              <span class="tl-tag">Documentation</span>
+              <span class="tl-tag">Digital Media</span>
+              <span class="tl-tag">Publication</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="section-number">06</div>
+    <div class="container">
+      <div class="section-tag reveal">// ESTABLISH_CONNECTION.exe</div>
+      <h2 class="section-title reveal">GET IN <span class="neon">TOUCH</span></h2>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p class="contact-tagline">Ready to build something extraordinary together? Let's connect and create solutions that matter.</p>
+          <div class="c-items">
+            <div class="c-item"><div class="c-icon"><i class="fas fa-envelope"></i></div><div><div class="c-label">EMAIL</div><div class="c-val">andimuhihsanulhaqm@gmail.com</div></div></div>
+            <div class="c-item"><div class="c-icon"><i class="fas fa-map-marker-alt"></i></div><div><div class="c-label">LOCATION</div><div class="c-val">Indonesia 🇮🇩</div></div></div>
+            <div class="c-item"><div class="c-icon"><i class="fas fa-graduation-cap"></i></div><div><div class="c-label">EDUCATION</div><div class="c-val">Telkom University</div></div></div>
+          </div>
+          <div class="open-badge"><span class="open-pulse"></span>OPEN TO OPPORTUNITIES</div>
+        </div>
+        <div class="contact-form-wrap reveal">
+          <div class="terminal-header">
+            <div class="t-dots"><span></span><span></span><span></span></div>
+            <div class="t-title">contact_form.sh</div>
+          </div>
+          <form id="contact-form" class="c-form">
+            <div class="f-group">
+              <label class="f-label">&gt; ENTER_NAME:</label>
+              <input type="text" id="f-name" class="f-input" placeholder="Your name..." required />
+            </div>
+            <div class="f-group">
+              <label class="f-label">&gt; ENTER_EMAIL:</label>
+              <input type="email" id="f-email" class="f-input" placeholder="your@email.com" required />
+            </div>
+            <div class="f-group">
+              <label class="f-label">&gt; ENTER_MESSAGE:</label>
+              <textarea id="f-message" class="f-input f-textarea" placeholder="Hello, let's work together..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary magnetic" id="btn-send">
+              SEND_MESSAGE.EXE <i class="fas fa-paper-plane"></i>
+            </button>
+            <div id="form-msg" class="form-feedback"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">AH<span class="neon">.</span></div>
+        <nav class="footer-nav">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <p>© 2024 Andi Muh Ihsanul Haq M. All rights reserved.</p>
+        <p class="footer-code">// Built with <span class="neon">❤</span> &amp; Code</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/matrix.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

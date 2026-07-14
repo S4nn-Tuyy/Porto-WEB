@@ -147,3 +147,83 @@
   0%   { left: -100%; }
   100% { left: 200%;  }
 }
+
+/* ── PREMIUM ANIMATIONS ── */
+
+/* Luxury card entrance */
+@keyframes luxIn {
+  from { opacity: 0; transform: translateY(30px) scale(0.97); filter: blur(4px); }
+  to   { opacity: 1; transform: translateY(0)    scale(1);    filter: blur(0); }
+}
+.lux-in {
+  animation: luxIn 0.7s cubic-bezier(0.23,1,0.32,1) forwards;
+}
+
+/* Neon border sweep */
+@keyframes borderSweep {
+  0%   { background-position: 0% 0%; }
+  100% { background-position: 200% 0%; }
+}
+
+/* Aurora ambient */
+@keyframes auroraShift {
+  0%   { opacity: 0.7; transform: scale(1);    }
+  50%  { opacity: 1;   transform: scale(1.03); }
+  100% { opacity: 0.8; transform: scale(1.05); }
+}
+
+/* Hero grid fade */
+@keyframes gridFade {
+  0%,100% { opacity: 0.4; }
+  50%     { opacity: 0.8; }
+}
+
+/* Particle float */
+@keyframes floatParticle {
+  0%   { transform: translateY(100vh) translateX(0)   scale(0); opacity: 0;   }
+  5%   { opacity: 0.7; transform: translateY(95vh) translateX(5px)  scale(1); }
+  95%  { opacity: 0.5; }
+  100% { transform: translateY(-10vh) translateX(20px) scale(0.5); opacity: 0; }
+}
+
+/* Skill bar glow pulse */
+@keyframes barGlow {
+  0%,100% { box-shadow: 0 0 8px rgba(0,255,136,0.5); }
+  50%     { box-shadow: 0 0 20px rgba(0,255,136,0.9), 0 0 40px rgba(0,255,136,0.4); }
+}
+.sk-fill.animate-fill { animation: fillBar .8s ease forwards, barGlow 2s ease-in-out 0.8s infinite; }
+
+/* Neon text flicker */
+@keyframes neonTextFlicker {
+  0%,94%,96%,100% { opacity: 1; }
+  95%             { opacity: 0.6; }
+}
+
+/* Horizontal line scan */
+@keyframes scanH {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(200%);  }
+}
+
+/* Gradient shift */
+@keyframes gradShift {
+  0%   { background-position: 0%   50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0%   50%; }
+}
+
+/* Section number drift */
+@keyframes sectionNumDrift {
+  0%,100% { transform: translateY(0)   rotate(0deg); }
+  50%     { transform: translateY(-8px) rotate(1deg); }
+}
+
+/* Reveal with blur */
+.reveal {
+  filter: blur(3px);
+  transition: all .7s cubic-bezier(0.23,1,0.32,1), filter .7s ease;
+}
+.reveal.revealed {
+  filter: blur(0);
+}
+

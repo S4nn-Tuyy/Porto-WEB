@@ -30,7 +30,7 @@ a{text-decoration:none;color:inherit;}
 /* NAVBAR */
 #navbar{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:20px 5%;transition:all .3s;}
 #navbar.scrolled{background:rgba(6,13,6,0.9);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:14px 5%;}
-.nav-logo{font-family:var(--font-display);font-size:1.8rem;letter-spacing:2px;color:#fff;}
+.nav-logo{font-family:var(--font-display);font-size:1.3rem;letter-spacing:2px;color:#fff;}
 .neon{color:var(--neon);animation:glowPulse 2s infinite;}
 .nav-links{display:flex;list-style:none;gap:32px;}
 .nav-link{font-family:var(--font-mono);font-size:.78rem;letter-spacing:2px;color:var(--muted);transition:color .3s;}
@@ -186,7 +186,7 @@ a{text-decoration:none;color:inherit;}
 .timeline{position:relative;padding-left:40px;}
 .timeline::before{content:'';position:absolute;left:12px;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,var(--neon),transparent);}
 .tl-item{position:relative;margin-bottom:48px;}
-.tl-dot{position:absolute;left:-44px;top:8px;width:24px;height:24px;border:1px solid var(--neon);background:var(--bg);display:flex;align-items:center;justify-content:center;}
+.tl-dot{position:absolute;left:-40px;top:8px;width:24px;height:24px;border:1px solid var(--neon);background:var(--bg);display:flex;align-items:center;justify-content:center;}
 .tl-pulse{width:8px;height:8px;background:var(--neon);border-radius:50%;animation:pulseDot 1.5s infinite;}
 .tl-card{background:var(--glass);border:1px solid var(--border);padding:24px;transition:border-color .3s;}
 .tl-card:hover{border-color:rgba(0,255,127,.4);}
@@ -254,7 +254,7 @@ a{text-decoration:none;color:inherit;}
 /* FOOTER */
 #footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 0 24px;}
 .footer-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;}
-.footer-logo{font-family:var(--font-display);font-size:2rem;letter-spacing:2px;}
+.footer-logo{font-family:var(--font-display);font-size:1.5rem;letter-spacing:2px;}
 .footer-nav{display:flex;gap:24px;}
 .footer-nav a{font-family:var(--font-mono);font-size:.72rem;letter-spacing:2px;color:var(--muted);transition:color .3s;}
 .footer-nav a:hover{color:var(--neon);}

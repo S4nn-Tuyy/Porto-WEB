@@ -45,5 +45,12 @@
     }
   }
 
-  setInterval(draw, 55);
+  // Pause animation when tab is hidden
+  let animInterval;
+  function startAnim() { animInterval = setInterval(draw, 80); }
+  function stopAnim()  { clearInterval(animInterval); }
+  startAnim();
+  document.addEventListener('visibilitychange', () => {
+    document.hidden ? stopAnim() : startAnim();
+  });
 })();
